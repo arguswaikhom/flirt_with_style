@@ -8,3 +8,4 @@ export 'src/constants/fs_const.dart';
 export 'src/widgets/fs_circle_avatar.dart';
 export 'src/widgets/fs_colored_safearea.dart';
 export 'src/widgets/fs_ring.dart';
+export 'src/widgets/fs_boolean_circle_icon_button.dart';
