@@ -4,6 +4,7 @@ class FSCircleButton extends StatelessWidget {
   final Widget child;
   final EdgeInsets margin;
   final EdgeInsets padding;
+  final Color backgroundColor;
   final GestureTapCallback? onTap;
 
   const FSCircleButton({
@@ -12,6 +13,7 @@ class FSCircleButton extends StatelessWidget {
     this.margin = EdgeInsets.zero,
     this.padding = EdgeInsets.zero,
     this.onTap,
+    this.backgroundColor = Colors.transparent,
   }) : super(key: key);
 
   @override
@@ -19,7 +21,7 @@ class FSCircleButton extends StatelessWidget {
     return Material(
       shape: CircleBorder(),
       clipBehavior: Clip.hardEdge,
-      color: Colors.transparent,
+      color: backgroundColor,
       child: InkWell(
         onTap: onTap,
         child: Container(
